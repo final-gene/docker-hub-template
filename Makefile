@@ -11,6 +11,11 @@ ${VERSIONS}:
 
 	@docker run \
 		--rm \
+		--volume "$(shell pwd)":/lint/input \
+		zemanlx/remark-lint --frail .
+
+	@docker run \
+		--rm \
 		--volume "$(shell pwd)":/app \
 		finalgene/hadolint \
 		${@}/Dockerfile
