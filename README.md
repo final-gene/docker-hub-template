@@ -1,7 +1,8 @@
 # TODO: title
-[![CircleCI](https://circleci.com/gh/final-gene/docker-hub-todo-image-name/tree/master.svg?style=svg)](https://circleci.com/gh/final-gene/docker-hub-todo-image-name/tree/master) Todo: Insert codacy badges link here
 
-This is a image to run the [todo command name](todo url).
+[![Docker build and publish](https://github.com/final-gene/docker-hub-todo-image-name/actions/workflows/publish.yml/badge.svg)](https://github.com/final-gene/docker-hub-todo-image-name/actions/workflows/publish.yml)
+
+This is an image to run the [todo command name](todo url).
 
 ## Supported tags and respective Dockerfile links
 -   `0.0`, `latest` [(0.0/Dockerfile)](https://github.com/finalgene/docker-hub-todo-image-name/blob/master/0.0/Dockerfile)
