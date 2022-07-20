@@ -37,7 +37,7 @@ jobs:
             type=match,pattern=\d+.\d+
             type=match,pattern=\d+.\d+.\d+
             type=match,pattern=\d+.\d+.\d+-.+
-            type=raw,value=latest
+            type=raw,value=latest,enable={{is_default_branch}}
           labels: |
             org.opencontainers.image.vendor=${{ github.repository_owner }}
 
@@ -55,3 +55,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ env.DOCKER_IMAGE_NAME }}:latest
