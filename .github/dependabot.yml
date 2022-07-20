@@ -5,3 +5,12 @@ updates:
     directory: /
     schedule:
       interval: daily
+    reviewers:
+      - FrankGiesecke
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+    reviewers:
+      - FrankGiesecke
